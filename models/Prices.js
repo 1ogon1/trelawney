@@ -1,9 +1,5 @@
 const big = require('big.js')
 
-function getBig(number, tokendDecimals) {
-  return new big(number).mul(new big(10).pow(tokendDecimals)).toFixed()
-}
-
 module.exports = class Prices {
   data = {}
   constructor() {}
