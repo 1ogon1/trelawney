@@ -10,7 +10,7 @@ const CoinGecoClient = require('./api/CoinGeckoClient')
 const CoinMarketClient = require('./api/CoinMarketClient')
 
 const app = express()
-console.log({ nearConfig })
+
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
@@ -43,13 +43,6 @@ module.exports = class App {
   _initRoutes() {
     this._app.get('/', async (request, response) => {
       try {
-        // await this._nearClient.init()
-
-        // response.status(200).json({
-        //   binance: await this._binanceClient.getPrices(),
-        //   coinGeco: await this._coinGecoClient.getPrice(),
-        //   coinMarket: await this._coinMaketClient.getPrices(),
-        // })
         response.status(200).json('app is running now')
       } catch (e) {
         console.log(e)
