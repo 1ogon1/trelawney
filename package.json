@@ -1,0 +1,20 @@
+{
+  "name": "trelawney",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "big.js": "^6.1.1",
+    "coingecko-api": "^1.0.10",
+    "coinmarketcap-api": "^3.1.1",
+    "express": "^4.17.1",
+    "near-api-js": "^0.44.2",
+    "node-binance-api": "^0.13.1",
+    "node-cron": "^3.0.0"
+  }
+}
